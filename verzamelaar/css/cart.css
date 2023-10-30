@@ -1,0 +1,41 @@
+nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+    background-color: var(--color-main);
+}
+
+nav a {
+    font-family: var(--font-bold);
+    color: #fff;
+    border: 2px solid hsla(0, 0%, 80%, .6);
+    padding: .75em 1.5em;
+    border-radius: 10px;
+}
+
+main {
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+table {border-collapse: collapse;}
+
+th, .main, td {
+    border: 1px solid rgb(232, 232, 232);
+}
+
+th, td {padding: 0.5rem;}
+
+th {
+    font-family: var(--font-bold);
+    color: #fff;
+    background-color: var(--color-main);
+}
+
+td {font-family: var(--font-main);}

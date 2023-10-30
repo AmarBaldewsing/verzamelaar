@@ -1,0 +1,43 @@
+nav {
+    background-color: var(--color-main) !important;
+}
+
+.con-main {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px 0;
+}
+
+.card {
+    border: var(--color-main) 1px solid;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 33%;
+    margin: 0 1rem;
+}
+
+.con-main h1 {
+    font-size: 1.5rem;
+    font-family: var(--font-bold);
+    color: var(--color-main);
+}
+
+.con-main p, .con-main a {
+    font-family: var(--font-main);
+}
+
+.con-main a {
+    background-color: var(--color-ctaBG);
+    padding: 0.5em 2em;
+}
+
+.card img {
+    max-width: 200px;
+}

@@ -1,0 +1,120 @@
+nav {
+    background-color: transparent !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0); 
+    display: grid;
+    place-items: center;
+    animation: bg-color 1s 5s ease forwards;
+}
+
+.ani-f {
+    opacity: 0;
+    animation: fadeIn 1s 5s ease forwards;
+}
+/*---Animation header---*/
+@keyframes bg-color {
+    to {
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/*----------------------*/
+
+.con-header { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.con-header p {color: hsla(0, 0%, 90%, 0.882);}
+
+.con-header h1,
+.con-main h1,
+.con-sec h1 {
+    max-width: 30ch;
+    line-height: 1.6;
+    font-family: var(--font-bold);
+    color: var(--color-main)
+}
+
+.con-header p, 
+.con-header a,
+.con-main p,
+.con-sec p{
+    font-family: var(--font-main);
+    max-width: 50ch;
+}
+
+.con-header a,
+.con-sec a {
+    background-color: var(--color-ctaBG);
+    width: max-content;
+    padding: 0.75em;
+    border-radius: 1em;
+    color: #000;
+}
+
+.con-sec {
+    padding: 2rem 0;
+    min-height: 20vh;
+    display: grid;
+    gap: 5px;
+    place-items: center;
+}
+
+.card {
+    border: var(--color-main) 1px solid;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 33%;
+    margin: 0 1rem;
+}
+
+.con-main h1 {
+    font-size: 1.5rem;
+    font-family: var(--font-bold);
+    color: var(--color-main);
+    text-align: center;
+    margin: 1rem auto;
+}
+.card img {
+    max-width: 200px;
+}
+
+.items {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px 0;
+}

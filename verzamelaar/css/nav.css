@@ -1,0 +1,81 @@
+/*logo syles*/
+.logo {
+    font-family: var(--font-logo);
+    font-size: 2rem;
+    color: var(--color-subMain);
+}
+
+.con-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo::after {
+    content: "Fans";
+    font-size: 1rem;
+    font-family: var(--font-main);
+    font-weight: var(--roboto-thin);
+}
+
+
+/*nav styles*/
+nav {
+    /*background-color: var(--color-main);*/
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav-scroll {
+    background-color: var(--color-main) !important;
+    transition: background-color 0.3s;
+}
+
+.login {
+    padding: 0 0 0 .5em;
+    border-left: 1px solid #fff;
+}
+
+nav .con-nav {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .con-nav ul,
+footer ul {
+    gap: 1em;
+    font-family: var(--font-bold);
+    color: var(--color-subMain);
+    font-size: 1.1rem;
+}
+
+/*styles footer*/
+footer {
+    background-color: var(--color-main);
+    padding: 2rem;
+}
+
+footer hr {
+    color: #fff;
+    width: 100%;
+}
+
+.con-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrights {
+    font-family: var(--font-main);
+    font-weight: var(--roboto-thin);
+    color: #fff;
+}
+
+.main {
+    border-bottom: 1px solid #fff;
+}
